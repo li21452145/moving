@@ -62,8 +62,10 @@ li{
     background-size: 100% 100%;
     z-index: 20;
 }
-
-.musicMove,.arrMove{
+.arrMove{
+    animation: 1s infinite arrMove;
+}
+.musicMove{
     -webkit-animation: musicMove 1s linear 0s infinite;
     animation: musicMove 1s linear 0s infinite;
     -webkit-animation-fill-mode: both;
