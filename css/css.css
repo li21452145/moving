@@ -547,6 +547,7 @@ li{
     position: absolute;
 }
 #a5 .box p span:nth-child(1){
+    top:0;
     float: left;
     left: 2rem;
     width: 6rem;
@@ -557,6 +558,7 @@ li{
 }
 #a5 .box p span:nth-child(2){
     left: 10rem;
+    top:0;
     line-height: 6rem;
     font-size: 2rem;
     color: #ffffff;
