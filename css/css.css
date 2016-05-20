@@ -63,7 +63,7 @@ li{
     z-index: 20;
 }
 
-.musicMove {
+.musicMove,.arrMove{
     -webkit-animation: musicMove 1s linear 0s infinite;
     animation: musicMove 1s linear 0s infinite;
     -webkit-animation-fill-mode: both;
