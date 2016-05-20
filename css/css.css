@@ -68,7 +68,10 @@ li{
     z-index: 20;
 }
 .arrMove{
-    animation: 1s infinite arrMove;
+    -webkit-animation: musicMove 1s linear 0s infinite;
+    animation: musicMove 1s linear 0s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 .musicMove{
     -webkit-animation: musicMove 1s linear 0s infinite;
