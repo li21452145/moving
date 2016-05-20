@@ -29,23 +29,28 @@ li{
 .con .bottom{
     position: absolute;
     left: 50%;
+    width: 4rem;
+    height: 4rem;
+
     margin-left: -2rem;
     bottom: 2rem;
     z-index: 20;
     text-align: center;
+    background:url("../img/shang.png") no-repeat;
+    background-size: 100% 100%;
     animation:arrMove 1s linear 0s infinite;
 }
 .con .bottom i{
     font-size: 2rem;
-    color: #d6d4c1;
+    color: #ffffff;
 }
 @keyframes arrMove {
-    0%{transform: translateY(4rem); opacity: 0}
+    0%{transform: translateY(4rem); opacity: 0.2}
     50%{transform: translateY(2rem); opacity: 0.8}
     100%{transform: translateY(0); opacity: 0}
 }
 @-webkit-keyframes arrMove {
-    0%{transform: translateY(4rem); opacity: 0}
+    0%{transform: translateY(4rem); opacity: 0.2}
     50%{transform: translateY(2rem); opacity: 0.8}
     100%{transform: translateY(0); opacity: 0}
 }
