@@ -1,0 +1,631 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+.con{
+    width: 640px;
+    height: 960px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -320px;
+    top:0;
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    overflow: hidden;
+}
+
+/* 箭头 */
+.con .bottom{
+    position: absolute;
+    left: 50%;
+    margin-left: -2rem;
+    bottom: 2rem;
+    z-index: 20;
+    text-align: center;
+    animation:arrMove 1s linear 0s infinite;
+}
+.con .bottom i{
+    font-size: 2rem;
+    color: #d6d4c1;
+}
+@-webkit-keyframes arrMove {
+    0%{transform: translateY(60px); bottom: 3rem}
+    50%{transform: translateY(30px); bottom: 3.5rem}
+    100%{transform: translateY(0); bottom: 4rem}
+}
+@keyframes arrMove {
+    0%{transform: translateY(60px); bottom: 3rem}
+    50%{transform: translateY(30px); bottom: 3.5rem}
+    100%{transform: translateY(0); bottom: 4rem}
+}
+
+/* 音乐 */
+.music {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background: url("../css/music.svg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 20;
+}
+
+.musicMove {
+    -webkit-animation: musicMove 1s linear 0s infinite;
+    animation: musicMove 1s linear 0s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.music audio {
+    display: none;
+}
+
+.con ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.con ul li{
+    position: absolute;
+    width:100%;
+    height:100%;
+    font-size: 100px;
+    left:0;
+    top:0;
+    z-index: 5;
+}
+.con ul li:nth-child(1){
+    background: url("../img/bg1.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    background-color:#ffffff;
+}
+.con ul li:nth-child(2){
+    background: url("../img/bg2.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.con ul li:nth-child(3){
+    background: url("../img/bg3.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.con ul li:nth-child(4){
+    background: url("../img/bg4.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.con ul li:nth-child(5){
+    background: url("../img/bg5.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.con ul li:nth-child(6){
+    background: url("../img/bg6.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.con ul li:nth-child(7){
+    background: url("../img/bg7.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.con ul li.zIndex {
+    z-index: 10;
+}
+
+#a0,#a1,#a2,#a3,#a4,#a5,#a6 {
+    position: relative;
+    background: rgba(225,225,225,.1);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ h1{
+     position: absolute;
+     top: 5%;
+     left: 50%;
+     margin-left:-7.5rem ;
+     width: 15rem;
+     height:4.25rem;
+     background: url("../img/biaoti.gif") no-repeat center center;
+    text-align: center;
+    line-height: 4.25rem;
+    color: #4cccd9;
+    font-size: 2rem;
+    animation:fadeInDown 1s linear 0s 1;
+}
+ /* 第一个li */
+#a0 .box{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+#a0 .box p{
+    position: absolute;
+    width: 100%;
+    height:4rem;
+    left: 0;
+}
+#a0 .box p:nth-child(1){
+    top: 0;
+    background: url("../img/03.png") no-repeat;
+    background-size: 100% 100%;
+    animation:bounceInDown 6s linear 0s 1;
+}
+#a0 .box p:nth-child(2){
+    top: 15%;
+    background: url("../img/04.png") no-repeat;
+    background-size: 100% 100%;
+    animation:bounceInDown 5s linear 0s 1;
+}
+#a0 .box p:nth-child(3){
+    top: 30%;
+    background: url("../img/03.png") no-repeat;
+    background-size: 100% 100%;
+    animation:bounceInDown 4s linear 0s 1;
+}
+#a0 .box p:nth-child(4){
+    top: 45%;
+    background: url("../img/04.png") no-repeat;
+    background-size: 100% 100%;
+    animation:bounceInDown 3s linear 0s 1;
+}
+#a0 .box p:nth-child(5){
+    top: 60%;
+    background: url("../img/03.png") no-repeat;
+    background-size: 100% 100%;
+    animation:bounceInDown 2s linear 0s 1;
+}
+#a0 .box p:nth-child(6){
+    top: 75%;
+    background: url("../img/04.png") no-repeat;
+    background-size: 100% 100%;
+    animation:bounceInDown 1s linear 0s 1;
+}
+#a0 .box p span{
+    font-size: 2rem;
+    line-height: 4rem;
+}
+#a0 .box p span:nth-child(1){
+    position: relative;
+    float: left;
+    margin-left: 2rem;
+    color: #ffffff;
+    animation:bounceInRight 5s linear 0s 1;
+}
+#a0 .box p span:nth-child(2){
+    position: relative;
+    float: right;
+    margin-right: 2rem;
+    color: #00A5FF;
+    animation:bounceInLeft 5s linear 0s 1;
+}
+
+/* 第二个li 下的内容*/
+#a1 .box,#a1 .box1{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 40%;
+}
+#a1 .box{
+    top: 20%;
+}
+#a1 .box p{
+    position: absolute;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #ffffff;
+}
+#a1 .box p:nth-child(1){
+    top: 0;
+    left: 50%;
+    margin-left: -3rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url("../img/Zi%20(2).png") no-repeat center center;
+    background-size:100% 100%;
+    animation:fadeIn 3s linear 0s 1;
+}
+#a1 .box p:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+}
+#a1 .box p:nth-child(2){
+    top: 35%;
+    left: 33%;
+    animation:fadeIn 3s linear 0s 1;
+}
+#a1 .box p:nth-child(3){
+    top: 46%;
+    left: 33%;
+    animation:fadeIn 3s linear 0s 1;
+}
+#a1 .box1{
+    top: 50%;
+    background: url("../img/gongz2.png") no-repeat center center;
+    animation:fadeIn 3s linear 0s 1;
+    overflow: hidden;
+}
+#a1 .box1 p{
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+#a1 .box1 p:nth-child(1){
+    top: 30%;
+    left: 15%;
+    color: red;
+    animation:fadeInLeftBig 2s linear 0s 1;
+}
+#a1 .box1 p:nth-child(2){
+    top: 60%;
+    left: 45%;
+    color: #999;
+    animation:fadeInRightBig 2s linear 0s 1;
+}
+
+/* 第三个li 下的内容*/
+#a2 .box,#a2 .box1{
+    position: absolute;
+    top: 20%;
+    height:80% ;
+}
+#a2 .box{
+    width: 90px;
+    left: 20%;
+}
+#a2 .box1{
+    width: 52%;
+    left: 40%;
+}
+#a2 .box p,#a2 .box1 p{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+}
+#a2 .box p:nth-child(1){
+    top: 0;
+    left: 14%;
+    background: url("../img/js0.png") no-repeat ;
+    background-size: 100% 100%;
+    animation:fadeInLeftBig 1s linear 0s 1;
+}
+#a2 .box p:nth-child(2){
+    top: 20%;
+    background: url("../img/ji2.png") no-repeat;
+    background-size: 100% 100%;
+    animation:fadeInLeftBig 2s linear 0s 1;
+}
+#a2 .box p:nth-child(3){
+    top:40%;
+    background: url("../img/ji3.png") no-repeat;
+    background-size: 100% 100%;
+    animation:fadeInLeftBig 1s linear 0s 1;
+}
+#a2 .box p:nth-child(4){
+    top: 60%;
+    background: url("../img/ji9.png") no-repeat;
+    background-size: 100% 100%;
+    animation:fadeInLeftBig 2s linear 0s 1;
+}
+#a2 .box p:nth-child(5){
+    top: 80%;
+    background: url("../img/ji6.png") no-repeat;
+    background-size: 100% 100%;
+    animation:fadeInLeftBig 1s linear 0s 1;
+}
+/* 第二个li的文字内容 */
+#a2 .box1 p{
+    font-size: 2rem;
+    color: #BE46D8;
+    font-weight: 900;
+    background-size: 100% 100%;
+}
+#a2 .box1 p:nth-child(1){
+    top: 0;
+    background: url("../img/01.png") no-repeat ;
+    animation:fadeInRightBig 1s linear 0s 1;
+}
+#a2 .box1 p:nth-child(2){
+    top: 20%;
+    background: url("../img/02.png") no-repeat;
+    animation:fadeInRightBig 2s linear 0s 1;
+}
+#a2 .box1 p:nth-child(3){
+    top:40%;
+    background: url("../img/01.png") no-repeat;
+    animation:fadeInRightBig 1s linear 0s 1;
+}
+#a2 .box1 p:nth-child(4){
+    top: 60%;
+    background: url("../img/02.png") no-repeat;
+    animation:fadeInRightBig 2s linear 0s 1;
+}
+#a2 .box1 p:nth-child(5){
+    top: 80%;
+    background: url("../img/01.png") no-repeat;
+    animation:fadeInRightBig 1s linear 0s 1;
+}
+
+/* 第四个li内容 */
+#a3 .box1,#a3 .box{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height:30%;
+    overflow: hidden;
+}
+#a3 .box1{
+    top: 20%;
+    background: url("../img/gongz2.png") no-repeat;
+    background-size:100% 100%;
+    animation:zoomInLeft 2s linear 0s 1;
+}
+#a3 .box1 p{
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+#a3 .box1 p:nth-child(1){
+    top: 10%;
+    left: 20%;
+}
+#a3 .box1 p:nth-child(2){
+    top: 30%;
+    left: 50%;
+}
+#a3 .box1 p:nth-child(3){
+    top: 50%;
+    left: 20%;
+}
+#a3 .box1 p:nth-child(4){
+    top: 70%;
+    left: 50%;
+}
+#a3 .box1 p:nth-child(1),#a3 .box1 p:nth-child(3){
+    color: #424242;
+    animation:bounceInRight 3s linear 0s 1;
+}
+#a3 .box1 p:nth-child(2),#a3 .box1 p:nth-child(4){
+    color: red;
+    animation:bounceInLeft 3s linear 0s 1;
+}
+#a3 .box{
+    top: 60%;
+}
+#a3 .box p{
+    position: absolute;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 900;
+}
+#a3 .box p:nth-child(1){
+    top: 10%;
+    left: 0;
+    animation:bounceInRight 5s linear 0s 1;
+}
+#a3 .box p:nth-child(2){
+    top: 50%;
+    right: 0;
+    animation:bounceInLeft 5s linear 0s 1;
+}
+
+/* 第五个li爱好页 */
+#a4 .box{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 20%;
+    left: 10%;
+}
+#a4 .box p{
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+}
+#a4 .box p span{
+    display: block;
+}
+#a4 .box p span:nth-child(1){
+    position: relative;
+    float: left;
+    margin-left: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url("../img/aihao.jpg") no-repeat;
+}
+#a4 .box p span:nth-child(2){
+    position: relative;
+    float: right;
+    margin-right: 2rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+#a4 .box p:nth-child(1){
+    top: 0;
+}
+#a4 .box p:nth-child(2){
+    top: 25%;
+}
+#a4 .box p:nth-child(3){
+    top: 50%;
+}
+#a4 .box p:nth-child(4){
+    top: 75%;
+}
+#a4 .box p:nth-child(1) span:nth-child(1){
+    background-position: -200px -117px;
+    animation:bounceInDown 1s linear 0s 1;
+}
+#a4 .box p:nth-child(1) span:nth-child(2){
+    animation:bounceInUp 4s linear 0s 1;
+}
+#a4 .box p:nth-child(2) span:nth-child(1){
+    background-position: -298px -117px;
+    animation:bounceInDown 2s linear 0s 1;
+}
+#a4 .box p:nth-child(2) span:nth-child(2){
+    animation:bounceInUp 3s linear 0s 1;
+}
+#a4 .box p:nth-child(3) span:nth-child(1){
+    background-position: -298px -216px;
+    animation:bounceInDown 3s linear 0s 1;
+}
+#a4 .box p:nth-child(3) span:nth-child(2){
+    animation:bounceInUp 2s linear 0s 1;
+}
+#a4 .box p:nth-child(4) span:nth-child(1){
+    background-position: -101px -216px;
+    animation:bounceInDown 4s linear 0s 1;
+}
+#a4 .box p:nth-child(4) span:nth-child(2){
+    animation:bounceInUp 1s linear 0s 1;
+}
+
+/* 第六个li 联系方式 */
+#a5 .box{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 20%;
+    left: 10%;
+}
+#a5 .box p{
+    position: absolute;
+    width: 100%;
+    height: 6rem;
+    line-height: 6rem;
+}
+#a5 .box p span{
+    display: block;
+}
+#a5 .box p span:nth-child(1){
+    position: relative;
+    float: left;
+    margin-left: 2rem;
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    background: url("../img/lianxi1.png") no-repeat;
+    border-radius: 20px;
+}
+#a5 .box p span:nth-child(2){
+    position: relative;
+    float: left;
+    margin-left: 1rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+#a5 .box p:nth-child(1){
+    top: 0;
+}
+#a5 .box p:nth-child(2){
+    top: 25%;
+}
+#a5 .box p:nth-child(3){
+    top: 50%;
+}
+#a5 .box p:nth-child(4){
+    top: 75%;
+}
+#a5 .box p:nth-child(1) span:nth-child(1){
+    background-position: -5px -696px;
+    animation:zoomInUp 1s linear 0s 1;
+}
+#a5 .box p:nth-child(1) span:nth-child(2){
+    animation:zoomInDown 1s linear 0s 1;
+}
+#a5 .box p:nth-child(2) span:nth-child(1){
+    background-position: -354px -342px;
+    animation:zoomInUp 2s linear 0s 1;
+}
+#a5 .box p:nth-child(2) span:nth-child(2){
+    animation:zoomInDown 2s linear 0s 1;
+}
+#a5 .box p:nth-child(3) span:nth-child(1){
+    background-position: -528px -10px;
+    animation:zoomInUp 2s linear 0s 1;
+}
+#a5 .box p:nth-child(3) span:nth-child(2){
+    animation:zoomInDown 2s linear 0s 1;
+}
+#a5 .box p:nth-child(4) span:nth-child(1){
+    background-position:-7px -6px;
+    animation:zoomInUp 1s linear 0s 1;
+}
+#a5 .box p:nth-child(4) span:nth-child(2){
+    animation:zoomInDown 1s linear 0s 1;
+}
+#a6 p{
+    position: absolute;
+    padding:2rem;
+    left: 5%;
+    width: 80%;
+    top: 50%;
+    color: #F1F1F1;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    animation:flipInY 1s linear 0s 1;
+
+}
+#a6 p span{
+    display: block;
+    font-size: 1.3rem;
+    width: 5.2rem;
+    height: 1.3rem;
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    margin-left: -3.6rem;
+    color: #00A5FF;
+    animation:flash 1s linear 0s infinite;
+}
+
+
