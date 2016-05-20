@@ -38,12 +38,17 @@ li{
     text-align: center;
     background:url("../img/shang.png") no-repeat;
     background-size: 100% 100%;
-    animation:arrMove 1s linear 0s infinite;
 }
 .con .bottom i{
     font-size: 2rem;
     color: #ffffff;
 }
+/*.arrMove{
+    -webkit-animation: musicMove 1s linear 0s infinite;
+    animation: musicMove 1s linear 0s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}*/
 @keyframes arrMove {
     0%{transform: translateY(4rem); opacity: 0.2}
     50%{transform: translateY(2rem); opacity: 0.8}
@@ -54,7 +59,12 @@ li{
     50%{transform: translateY(2rem); opacity: 0.8}
     100%{transform: translateY(0); opacity: 0}
 }
-
+.arrMove{
+    -webkit-animation: arrMove 1s linear 0s infinite;
+    animation: arrMove 1s linear 0s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 /* 音乐 */
 .music {
     display: none;
@@ -67,12 +77,7 @@ li{
     background-size: 100% 100%;
     z-index: 20;
 }
-.arrMove{
-    -webkit-animation: musicMove 1s linear 0s infinite;
-    animation: musicMove 1s linear 0s infinite;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
+
 .musicMove{
     -webkit-animation: musicMove 1s linear 0s infinite;
     animation: musicMove 1s linear 0s infinite;
