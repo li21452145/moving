@@ -40,13 +40,13 @@ li{
     color: #d6d4c1;
 }
 @keyframes arrMove {
-    0%{transform: translateY(60px); opacity: 0}
-    50%{transform: translateY(30px); opacity: 0.8}
+    0%{transform: translateY(4rem); opacity: 0}
+    50%{transform: translateY(2rem); opacity: 0.8}
     100%{transform: translateY(0); opacity: 0}
 }
 @-webkit-keyframes arrMove {
-    0%{transform: translateY(60px); opacity: 0}
-    50%{transform: translateY(30px); opacity: 0.8}
+    0%{transform: translateY(4rem); opacity: 0}
+    50%{transform: translateY(2rem); opacity: 0.8}
     100%{transform: translateY(0); opacity: 0}
 }
 
