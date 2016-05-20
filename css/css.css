@@ -630,4 +630,7 @@ li{
     animation:flash 1s linear 0s infinite;
 }
 
+#span1{
+    font-size: 2rem;color: #ffffff
+}
 
