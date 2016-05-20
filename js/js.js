@@ -20,7 +20,6 @@ if (winW / winH <= desW / desH) {
 
 function start(e) {
     this.startY = e.changedTouches[0].pageY;
-    console.log(this.startY)
 }
 function move(e) {
     this.flag = true;
@@ -28,7 +27,6 @@ function move(e) {
     var moveY = e.changedTouches[0].pageY;
     var movePos = moveY - this.startY;
     var index = this.index;
-    console.log(movePos,moveY);
     [].forEach.call(oLis,function(){
         if(arguments[1]!=index){
             arguments[0].style.display = "none";
